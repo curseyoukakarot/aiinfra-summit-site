@@ -1,0 +1,10 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Node / tooling (if added later)
+node_modules/
+.env
+.env.*
