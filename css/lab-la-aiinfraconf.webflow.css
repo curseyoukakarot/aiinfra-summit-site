@@ -25,7 +25,7 @@
   --whisper: #f4f0f6;
   --white: white;
   --silver-chalice: #acacac;
-  --blue: #43ccfc;
+  --blue: #5dff4e;
   --silver-2: #e9e9e9;
 }
 
@@ -3415,7 +3415,7 @@ blockquote {
 }
 
 .c-spk__spn__border.has-hover.u-blue {
-  border-image-source: linear-gradient(225deg, var(--orange), #43ccfc33 33%, transparent);
+  border-image-source: linear-gradient(225deg, var(--orange), #5dff4e33 33%, transparent);
 }
 
 .c-spk__spn__cube {
