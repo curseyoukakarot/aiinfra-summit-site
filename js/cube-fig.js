@@ -16,7 +16,8 @@
     loop: 10,                   // seconds per loop
     turns: 1,                   // full rotations per loop
     density: 6,                 // fracture cuts per axis
-    seed: 11
+    seed: 11,
+    size: 0.5                   // overall figure scale within the canvas (1 = full)
   };
 
   var S = 2, H = S / 2, TEX = 1024;
@@ -39,6 +40,7 @@
   var camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
   camera.position.set(0, 0, 9.6);
   var group = new THREE.Group();
+  group.scale.setScalar(CFG.size);
   scene.add(group);
 
   function makeTex() {
