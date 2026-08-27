@@ -1,0 +1,42 @@
+/* Site customizations layered on top of the Webflow export.
+   Loaded after the Webflow CSS, before the dynamically-injected
+   assets/lazarev bundles. Keep additions here instead of editing
+   the exported/minified files. */
+
+/* Hero background video (replaces the old c-hero__video figure that
+   sat below the hero content). Fills the hero section behind the
+   title/CTAs; content stays above via z-index. */
+.c-hero {
+  position: relative;
+  /* The old below-the-text video figure used to stretch the hero to fill
+     the first screen; keep that now the video is a background instead. */
+  min-height: 100svh;
+}
+
+.c-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.c-hero__bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Darken the video so the blue headline and green meta text stay legible. */
+.c-hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.c-hero > .o-container {
+  position: relative;
+  z-index: 1;
+}

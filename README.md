@@ -26,8 +26,9 @@ then open <http://localhost:8765/>. (Opening `index.html` directly via
 | `js/webflow.js` | Webflow runtime (interactions/IX2, forms, dropdowns…). |
 | `assets/lazarev/` | The agency's custom design/animation layer (GSAP, ScrollTrigger, Swiper, lazy-load, page transitions). Was hosted on Cloudinary and injected by inline `<head>` scripts. `g.min.{css,js}` are global; `infra6/{d,m}.min.{css,js}` are the desktop/mobile bundles for `index.html`; the other folders belong to the secondary pages. |
 | `assets/vendor/` | `jquery-3.5.1.min.js` (required by `webflow.js`) and `finsweet-cmsfilter.js`. |
+| `css/custom.css` | **Our customizations** layered on top of the export (currently: the hero background video). Add new styles here, never in the exported/minified files. |
 | `images/` | All images: Webflow-exported PNGs (favicon, OG images) **plus** every Cloudinary image the pages use (speaker photos `spt*.avif`, logos `*.svg`, gallery `a*.avif`, `mtl*.avif`, …). |
-| `videos/` | Every video `index.html` uses (hero video, cube/box-line loops, credentials reel). |
+| `videos/` | The self-hosted videos `index.html` uses (cube/box-line loops, credentials reel). The hero background video streams from Supabase (96 MB — too close to GitHub's 100 MB file limit to commit). |
 | `fonts/` | Geist + Geist Mono variable fonts. |
 | `documents/Agenda.pdf` | Agenda PDF linked from the page. |
 | `401.html`, `404.html`, `infra2.html`, `infra3.html`, `infra4.html`, `infra2-speakers.html`, `call-for-participation.html`, `detail_*.html` | Secondary pages from the export (past editions, speakers, CMS templates). Kept for reference; **not** the deliverable. |
