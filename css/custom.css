@@ -40,3 +40,11 @@
   position: relative;
   z-index: 1;
 }
+
+/* "Since Inception:" lead-in for the stats pane in the Memories section.
+   The pane is a 2x2 grid whose top-left cell was empty; the three stat
+   items keep their Webflow id-based placement. On mobile the pane becomes
+   a flex column and this rule is simply ignored (DOM order wins). */
+.c-per__pane__since {
+  grid-area: 1 / 1 / 2 / 2;
+}
