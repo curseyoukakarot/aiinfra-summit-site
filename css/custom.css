@@ -57,6 +57,210 @@
   background-color: var(--silver-2);
 }
 
+/* ---------------------------------------------------------------------
+   Programming section ("Stories that evolve with the market.") — replaces
+   the old agenda table. Intro copy + a drag/zoom slideshow of past-event
+   agendas, with the ticket/sponsor/speaker CTA row below. Sits in a
+   black-background zone, styled after the hero/agenda language. */
+.c-evo {
+  padding: 12rem 0 8rem;
+  color: #fff;
+}
+
+.c-evo__head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.c-evo__label {
+  color: var(--blue);
+  margin-bottom: 2.4rem;
+  align-self: flex-start;
+}
+
+.c-evo__title {
+  color: var(--blue);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.c-evo__pane {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-top: 8rem;
+}
+
+.c-evo__lttr {
+  color: var(--blue);
+  margin-bottom: 1.6rem;
+}
+
+.c-evo__pane__title {
+  font-size: 2.4rem;
+  line-height: 1.05;
+  font-variation-settings: "wght" 900;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+}
+
+.c-evo__pane__txt {
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+}
+
+/* --- the agenda slideshow --- */
+.c-evo__slider {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 8rem;
+  padding: 0 var(--main-x-2, 2rem);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.c-evo__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.c-evo__slider.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.c-evo__slide {
+  flex: 0 0 auto;
+  width: 38rem;
+  scroll-snap-align: start;
+  border: 1px solid rgba(93, 255, 78, 0.4);
+  background: #0c0c0c;
+  padding: 2.4rem 2.4rem 3.2rem;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.c-evo__slide:hover {
+  border-color: var(--blue);
+  transform: translateY(-0.6rem);
+}
+
+.c-evo__slide__head {
+  display: flex;
+  justify-content: space-between;
+  color: var(--blue);
+}
+
+.c-evo__slide__tag {
+  margin-top: 1.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.c-evo__slide__rule {
+  border-top: 1px dashed var(--blue);
+  margin: 1.6rem 0;
+}
+
+.c-evo__slide__src {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.2rem;
+}
+
+.c-evo__slide__list {
+  list-style: none;
+  counter-reset: evo;
+  margin: 0;
+  padding: 0;
+}
+
+.c-evo__slide__list li {
+  counter-increment: evo;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-variation-settings: "wght" 700;
+  padding: 1rem 0;
+  border-bottom: 1px dashed rgba(93, 255, 78, 0.25);
+  display: flex;
+  gap: 1.2rem;
+}
+
+.c-evo__slide__list li::before {
+  content: counter(evo, decimal-leading-zero);
+  font-family: gmv, sans-serif;
+  font-size: 1.2rem;
+  color: var(--blue);
+  flex: 0 0 auto;
+  padding-top: 0.2rem;
+}
+
+.c-evo__hint {
+  margin-top: 3.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.c-evo__cta {
+  display: flex;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+  margin-top: 4.8rem;
+}
+
+/* --- zoom overlay --- */
+.c-evo__zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s;
+}
+
+.c-evo__zoom.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c-evo__zoom .c-evo__slide {
+  width: min(56rem, 92vw);
+  max-height: 88vh;
+  overflow-y: auto;
+  transform: none;
+  cursor: default;
+}
+
+.c-evo__zoom__close {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  background: none;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-family: gmv, sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .c-evo__pane {
+    grid-template-columns: 1fr;
+  }
+  .c-evo__slide {
+    width: 82vw;
+  }
+  .c-evo__title {
+    text-align: left;
+  }
+}
+
 /* "Since Inception:" lead-in for the stats pane in the Memories section.
    The pane is a 2x2 grid whose top-left cell was empty; the three stat
    items keep their Webflow id-based placement. On mobile the pane becomes
