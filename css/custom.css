@@ -41,6 +41,22 @@
   z-index: 1;
 }
 
+/* The section background token --silver was darkened to #757575 (see the
+   g-override block in index.html) so the floating green UI reads on the
+   light sections. These consumers use silver as a FOREGROUND on dark or
+   green surfaces — keep them at the original light value. */
+.c-cta.u-17 {
+  color: var(--silver-2);
+}
+
+.c-features3v__3d {
+  color: var(--silver-2);
+}
+
+.c-features3v__3d__pixel {
+  background-color: var(--silver-2);
+}
+
 /* "Since Inception:" lead-in for the stats pane in the Memories section.
    The pane is a 2x2 grid whose top-left cell was empty; the three stat
    items keep their Webflow id-based placement. On mobile the pane becomes

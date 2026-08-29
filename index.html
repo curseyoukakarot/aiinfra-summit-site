@@ -411,7 +411,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   :root {
     --orange: var(--blue);
     --starship: var(--blue);
-    --silver: var(--silver-2);
+    /* Darkened from var(--silver-2) (#e9e9e9): the green UI that floats
+       over the light sections was unreadable on near-white. */
+    --silver: #757575;
   }
   .c-cookie__item {
     color: var(--black);
@@ -606,10 +608,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border-top: 1px dashed var(--blue);
   }
   .c-spk__grd {
-    background: linear-gradient(0deg, #e9e9e9 0%, #000 100%);
+    background: linear-gradient(0deg, var(--silver) 0%, #000 100%);
   }
   .c-spk__grd.u-1 {
-    background: linear-gradient(0deg, #000 0%, #e9e9e9 100%);
+    background: linear-gradient(0deg, #000 0%, var(--silver) 100%);
   }
   .c-agenda2v__option {
     background: #5dff4e26;
