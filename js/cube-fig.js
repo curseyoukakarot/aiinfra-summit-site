@@ -10,7 +10,7 @@
   // ---------------- CONFIG ----------------
   var CFG = {
     a1: 'AI', a2: 'INFRA',      // title face
-    b1: 'Dec 03/', b2: '2026',  // date face
+    b1: 'Dec 09/', b2: '2026',  // date face
     accent: '#5DFF4E',          // text + fracture faces
     cube: '#000000',            // cube body
     loop: 10,                   // seconds per loop
