@@ -213,7 +213,7 @@ a.ev-speaker:hover .ev-speaker__in { color: var(--ev-accent); }
   display: flex; align-items: center; justify-content: center;
 }
 .ev-sponsors__tier + .ev-sponsors__label { padding-top: 1.4rem; margin-top: 1.4rem; border-top: 1px solid var(--line); }
-.ev-sponsors__tier--t1 { --per: 4; --row: 140px; }
+.ev-sponsors__tier--t1 { --per: 3; --row: 140px; }
 .ev-sponsors__tier--t2 { --per: 3; --row: 104px; }
 .ev-media {
   list-style: none; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5rem;
