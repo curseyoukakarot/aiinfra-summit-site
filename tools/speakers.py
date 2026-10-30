@@ -9,56 +9,36 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LI = 'https://www.linkedin.com/in/'
 # slug, name, title, company, linkedin handle (None = not verified yet), tag (e.g. 'Keynote', 'Host')
 S = [
- ('dean-nelson','Dean Nelson','Chairman & Founder','Infrastructure Masons','deannelson',None),
- ('carl-brown','Carl Brown','GM of Sales & Business Development','Supermicro','carlbrown40',None),
- ('jeremiah-owyang','Jeremiah Owyang','GP','Blitzscaling','jowyang',None),
- ('kyle-sosnowski','Kyle Sosnowski','VP of engineering','Crusoe','kylekyle',None),
- ('joo-young-kim','Joo-Young Kim','CEO & Founder','HyperAccel','joo-young-kim-7b227955',None),
- ('luke-norris','Luke Norris','CEO','Kamiwaza','lukenorris',None),
- ('vik-malyala','Vik Malyala','Managing Director & President','Supermicro','malyala',None),
- ('nicole-wemple','Nicole Wemple','GTM, Enterprise','Hex','nicolewemple',None),
- ('tim-shea','Tim Shea','CEO','Latticework Insights','sheanineseven',None),
- ('kyle-morris','Kyle Morris','Founder, AGI House Resident','Epilogue','kylejohnmorris',None),
- ('duncan-ng','Duncan Ng','VP of Solutions Engineering','Vultr','duncan-ng',None),
- ('rahul-kar','Rahul Kar','CEO','Hammerhead.ai','rahulkar',None),
- ('louann-conner','LouAnn Conner','CEO','Sagacious Think','louannconner',None),
- ('tim-zhou','Tim Zhou','VP of Engineering','Micas Networks','tim-xin-zhou',None),
- ('nicola-tan','Nicola Tan','Enterprise AI GTM','AMD','nicolatan',None),
- ('lukas-gentele','Lukas Gentele','CEO','vCluster','gentele',None),
- ('meenal-iyer','Meenal Iyer','SVP of Data','Survey Monkey','meenal-iyer',None),
- ('matt-chow','Matt Chow','Chief Mental Health Officer','Telus Health','drmattchow',None),
- ('brian-sparkes','Brian Sparkes','Chief Venture Officer','Stak Ventures','brian%F0%9F%92%A5-sparkes-9967a8a0',None),
- ('aj-thomas','AJ Thomas','GP','Good Trouble Ventures','chaospilot',None),
- ('jay-jubran','Jay Jubran','Global Head of Infrastructure','IBM','jsjubran',None),
- ('mel-lim','Mel Lim','CEO','Chateauz','mellim',None),
- ('robert-scoble','Robert Scoble','CEO','Unaligned','scobleizer',None),
- ('stephanie-sparks','Stephanie Sparks','Attorney in Chief','Sparks Law','stephanie-o-sparks',None),
- ('brad-garsten','Brad Garsten','CEO','Quanta Networks','bradgarsten',None),
- ('okhtay-azarmanesh','Okhtay Azarmanesh','Principal AI architect','Snowflake','oxtay',None),
- ('rachel-zhao','Rachel Zhao','Sr. Program Manager','Supermicro','rachaelzhao',None),
- ('vasanth-mohan','Vasanth Mohan','Director of Product Marketing and Developer Relations','SambaNova','v-mohan',None),
- ('yujing-qian','Yujing Qian','Head of Engineering','GMI','yujing-qian-ab782381',None),
- ('wilson-liu','Wilson Liu','Head of CDN','Tencent Cloud','wilson-liu-wei',None),
- ('vince-fong','Vince Fong','CEO','Highrise AI','vtmfong',None),
- ('chris-dolan','Chris Dolan','Chief Data Center Officer','Crusoe','chris-dolan-84973',None),
- ('rajesh-gopinath','Rajesh Gopinath','Data center power systems engineering','Oracle','rajeshgopinath',None),
- ('carmen-li','Carmen Li','CEO','Compute Exchange','carmenrli',None),
- ('radhika-iyengar','Radhika Iyengar','Managing Partner','Starchain Ventures','radhikaiyengar13',None),
- ('john-brzowski','John Brzowski','CTO','Neuron Group','jbrzozowski',None),
- ('vaughn-stewart','Vaughn Stewart','VP of Engineering','Vast Data','vstewed',None),
- ('chad-mcdonald','Chad McDonald','CISO Advisor','TA Associates','chadwmcdonald',None),
- ('parker-gregg','Parker Gregg','VP of Business Development','HiVolt','parkergregg',None),
- ('anna-belova','Anna Belova','','','aibelova',None),
- ('michael-roy','Michael Roy','','AMD','mikeroysoft',None),
- ('bobby-napiltonia','Bobby Napiltonia','Founder','The GTM firm','bobby-napiltonia-8b82624',None),
- ('raghu-banda','Raghu Banda','Enterprise Architect Advisor - AI Strategy','SAP Americas','banda',None),
+ ('lamia-youseff','Lamia Youseff','Founder','Jazz Computing','lyouseff','Keynote'),
+ ('jason-pope','Jason Pope','CTO','Flagstar Bank','pope-jason','Keynote'),
+ ('victor-kuarsingh','Victor Kuarsingh','Former MVP, Capital One','Former Capital One / OCI','victorkuarsingh','Keynote'),
+ ('angela-yeung','Angela Yeung','SVP, Product','Cerebras','angela-yeung-70771162',None),
+ ('dean-nelson','Dean Nelson','Chairman','iMasons','deannelson',None),
+ ('christian-koch','Christian Koch','Member of Strategy Staff','OpenAI','chris--koch',None),
+ ('wanyu-bian','Wanyu Bian','ML Engineer / Architect','Apple','wanyu-bian-phd','Keynote'),
+ ('vyoma-gajjar','Vyoma Gajjar','Sr Principal AI Architect','ServiceNow','vyomagajjar','Moderator'),
+ ('andy-holland','Andy Holland','Sales Director - AI Infrastructure','DriveNets','andrewholland238',None),
+ ('david-goldman','David Goldman','Partner','Celesta Capital','david-goldman-a72895a5',None),
+ ('sasmita-padhy','Sasmita (Sas) Padhy','Sr. DevOps Engineer, AI/ML','AWS',None,None),
+ ('john-almon','John Almon','','AICE Capital (NPV Energy)','johnalmon',None),
+ ('gautam-kumar','Gautam Kumar','Engineering','Elorian.ai',None,None),
+ ('vinnie-chhabra','Vinnie Chhabra','Electronics Engineer','IBM','vinniechhabra',None),
+ ('hira-dangol','Hira Dangol','Founder/CEO & Chief AI Officer','GenEye Labs','hiradangol',None),
+ ('sree-ganesan','Sree Ganesan','VP of Product & Engineering','d-Matrix','sree-ganesan-68b5973',None),
+ ('vid-jain','Vid Jain','VP of Developer & Cloud Engineering','d-Matrix','vidjain',None),
+ ('kristin-bryson','Kristin Bryson','VP of Corporate Communications','d-Matrix','kristin-bryson-pr','Moderator'),
+ ('ashutosh-saxena','Ashutosh Saxena','CEO','TorqueAGI','saxenaashutosh',None),
+ ('aravind-srikumar','Aravind Srikumar','SVP of Product & Marketing','Upscale','aravind-srikumar-a6227019',None),
+ ('mike-todasco','Mike Todasco','','','todasco',None),
+ ('okhtay-azarmanesh','Okhtay Azarmanesh','Principal AI Architect','Snowflake','oxtay',None),
 ]
 IN_ICON = ('<svg class="ev-speaker__in" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>')
 e = html.escape
 
 def card(slug, name, title, co, handle, tag):
     photo = os.path.exists(os.path.join(ROOT, 'assets/speakers', slug + '.jpg'))
-    initials = ''.join(w[0] for w in name.split()[:2])
+    words = [w for w in name.split() if w[0].isalpha()]  # skip nicknames like "(Sas)"
+    initials = words[0][0] + (words[-1][0] if len(words) > 1 else '')
     avatar = (f'<img src="assets/speakers/{slug}.jpg" alt="" width="200" height="200" loading="lazy" />'
               if photo else f'<span aria-hidden="true">{e(initials)}</span>')
     tag_html = f'<span class="ev-speaker__tag">{e(tag)}</span>' if tag else ''
