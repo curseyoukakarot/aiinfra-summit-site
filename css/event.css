@@ -114,8 +114,10 @@ h1, h2, h3, h4, h5, h6,
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .ev-cos__label { font-size: 0.62rem; color: var(--grey-dim); margin-bottom: 1.2rem; }
-.ev-cos__logos { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5rem; }
-.ev-cos__logos li { flex: 0 0 calc((100% - 6 * 1.5rem) / 7); height: 76px; display: flex; align-items: center; justify-content: center; }
+.ev-cos__logos { --per: 7; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5rem; }
+.ev-cos__logos li { flex: 0 0 calc((100% - (var(--per) - 1) * 1.5rem) / var(--per)); height: 76px; display: flex; align-items: center; justify-content: center; }
+/* a company with no logo file, set in its own brand font (see the font link in <head>) */
+.ev-cos__word { font-size: var(--fs, 24px); line-height: 1; color: var(--ev-accent); white-space: nowrap; }
 /* --h = each logo's optically balanced height: wide wordmarks sit shorter,
    compact marks taller, so every logo reads the same size */
 .ev-cos__logos img, .ev-sponsors img, .ev-media img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
@@ -275,6 +277,7 @@ a.ev-speaker:hover .ev-speaker__in { color: var(--ev-accent); }
   .ev-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ev-cos__logos li { flex-basis: calc((100% - 3 * 1.5rem) / 4); }
   .ev-cos__logos img { height: calc(var(--h) * 0.85); }
+  .ev-cos__word { font-size: calc(var(--fs, 24px) * 0.85); }
   .ev-sponsors__tier { --per: 4; }
   .ev-sponsors__tier--t1 { --row: 112px; }
   .ev-sponsors__tier--t2 { --row: 88px; }
@@ -300,8 +303,9 @@ a.ev-speaker:hover .ev-speaker__in { color: var(--ev-accent); }
   .ev-cube { --s: 34px; }
   .ev-cards { grid-template-columns: 1fr; }
   .ev-cos__logos { column-gap: 1rem; }
-  .ev-cos__logos li { flex-basis: calc((100% - 1rem) / 2); height: 60px; }
-  .ev-cos__logos img { height: calc(var(--h) * 0.72); }
+  .ev-cos__logos li { flex-basis: calc((100% - 2 * 1rem) / 3); height: 56px; }
+  .ev-cos__logos img { height: calc(var(--h) * 0.62); }
+  .ev-cos__word { font-size: calc(var(--fs, 24px) * 0.62); }
   .ev-media { column-gap: 1rem; }
   .ev-media li { flex-basis: calc((100% - 1rem) / 2); height: 64px; }
   .ev-media img { height: calc(var(--h) * 0.72); }
