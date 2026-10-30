@@ -39,9 +39,13 @@
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preload" href="fonts/GeistVF.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- Vollkorn, subset to one word: the Jazz Computing wordmark in the speaker logo strip -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn&amp;text=JazzComputing&amp;display=swap" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/pages.css" />
-  <link rel="stylesheet" href="css/event.css" />
+  <!-- bump ?v= when event.css changes so cached copies can't pair new HTML with old CSS -->
+  <link rel="stylesheet" href="css/event.css?v=2026-10-30" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -197,11 +201,31 @@
       <!-- Logos trimmed to their ink bounds; --h is each logo's optically balanced height. -->
       <div class="ev-cos" data-reveal>
         <p class="ev-cos__label mono">Speakers from</p>
-        <ul class="ev-cos__logos" role="list">
-          <li><img src="assets/logos/speakers/cerebras.png" alt="Cerebras" style="--h: 46px" width="106" height="46" loading="lazy" /></li>
-          <li><img src="assets/logos/speakers/imasons.png" alt="iMasons (Infrastructure Masons)" style="--h: 34px" width="165" height="34" loading="lazy" /></li>
+        <ul class="ev-cos__logos" role="list" style="--per: 8;">
+          <li><img src="assets/logos/speakers/openai.svg" alt="OpenAI" style="--h: 33.2px" width="123" height="33" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/apple.svg" alt="Apple" style="--h: 44px" width="36" height="44" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/aws.svg" alt="AWS" style="--h: 47px" width="70" height="47" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/ibm.svg" alt="IBM" style="--h: 39.1px" width="105" height="39" loading="lazy" /></li>
+          <li><img src="assets/logos/sponsors/amd.svg" alt="AMD" style="--h: 31.7px" width="129" height="32" loading="lazy" /></li>
+          <li><img src="assets/logos/sponsors/supermicro.svg" alt="Supermicro" style="--h: 46.9px" width="87" height="47" loading="lazy" /></li>
+          <li><img src="assets/logos/sponsors/weka.svg" alt="WEKA" style="--h: 29.6px" width="138" height="30" loading="lazy" /></li>
+          <li><img src="assets/logos/sponsors/cisco.png" alt="Cisco" style="--h: 46.5px" width="88" height="47" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/snowflake.svg" alt="Snowflake" style="--h: 31.1px" width="132" height="31" loading="lazy" /></li>
           <li><img src="assets/logos/speakers/servicenow.svg" alt="ServiceNow" style="--h: 22.5px" width="154" height="22" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/cerebras.png" alt="Cerebras" style="--h: 46px" width="106" height="46" loading="lazy" /></li>
+          <li><img src="assets/logos/sponsors/sambanova.svg" alt="SambaNova" style="--h: 30.4px" width="135" height="30" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/d-matrix.svg" alt="d-Matrix" style="--h: 32.2px" width="127" height="32" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/flagstar-bank.svg" alt="Flagstar Bank" style="--h: 38.2px" width="107" height="38" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/imasons.png" alt="iMasons (Infrastructure Masons)" style="--h: 34px" width="165" height="34" loading="lazy" /></li>
           <li><img src="assets/logos/sponsors/upscale-ai.svg" alt="Upscale AI" style="--h: 29px" width="141" height="29" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/drivenets.png" alt="DriveNets" style="--h: 30px" width="147" height="30" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/celesta-capital.svg" alt="Celesta Capital" style="--h: 31.6px" width="130" height="32" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/aice-capital.png" alt="AICE Capital Partners" style="--h: 28.3px" width="145" height="28" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/elorian.svg" alt="Elorian" style="--h: 25.5px" width="160" height="26" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/geneye-labs.png" alt="GenEye Labs" style="--h: 46.8px" width="63" height="47" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/torqueagi.svg" alt="TorqueAGI" style="--h: 26.9px" width="152" height="27" loading="lazy" /></li>
+          <!-- Jazz Computing publishes no logo file; its site sets the name in Vollkorn -->
+          <li><span class="ev-cos__word" role="img" aria-label="Jazz Computing" style="font-family: 'Vollkorn', Georgia, serif; --fs: 21px;">JazzComputing</span></li>
         </ul>
       </div>
 
