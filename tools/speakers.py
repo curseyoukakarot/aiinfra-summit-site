@@ -26,7 +26,6 @@ S = [
  ('vyoma-gajjar','Vyoma Gajjar','Sr Principal AI Architect','ServiceNow','vyomagajjar','Moderator'),
  ('akansha-aggarwal','Akansha Aggarwal','SVP, Commercial Growth & Transformation','Uber Freight','leadtochangeakansha',None),
  ('wanyu-bian','Wanyu Bian','ML Engineer / Architect','Apple','wanyu-bian-phd',None),
- ('tamar-bercovici','Tamar Bercovici','VP of Engineering','Box','tamarbercovici',None),
  ('sandhya-subramani','Sandhya Subramani','Sr. Developer Advocate, Generative AI','AWS','sandhyasubramani',None),
  ('liran-zvibel','Liran Zvibel','CEO & Co-Founder','WEKA','liranzvibel',None),
  ('ravi-singh','Ravi Singh','Director of Product Strategy and Management','AMD','rksingh',None),
