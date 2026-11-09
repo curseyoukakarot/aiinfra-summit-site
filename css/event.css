@@ -200,6 +200,22 @@ a.ev-speaker:hover .ev-speaker__in { color: var(--ev-accent); }
 .ev-agenda__row--break { background: color-mix(in srgb, var(--ev-accent) 5%, transparent); }
 .ev-agenda__row--break .ev-agenda__title { color: var(--grey); }
 
+/* this summit's talks: no clock times, so the date column goes and speakers sit right */
+.ev-lineup { margin-top: 3rem; }
+.ev-lineup__date { font-size: 0.72rem; color: var(--ev-accent); }
+.ev-lineup__title { margin-top: 0.6rem; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.1; font-weight: var(--ev-head-weight); }
+.ev-lineup__note { margin-top: 0.6rem; font-size: 0.95rem; color: var(--grey); font-weight: 350; }
+.ev-lineup__track { margin-top: 2.4rem; font-size: 0.72rem; font-weight: 400; color: var(--white); }
+.ev-agenda--talks { margin-top: 0.9rem; max-width: none; }
+.ev-agenda--talks .ev-agenda__row { grid-template-columns: 5.8rem minmax(0, 1fr) 16rem; }
+.ev-agenda__blurb { margin-top: 0.4rem; font-size: 0.9rem; color: var(--grey); font-weight: 350; line-height: 1.5; max-width: 92ch; }
+.ev-agenda--talks .ev-agenda__who { margin-top: 0; font-size: 0.85rem; }
+.ev-agenda--talks .ev-agenda__who span { display: block; }
+@media (max-width: 900px) {
+  .ev-agenda--talks .ev-agenda__row { grid-template-columns: 5.8rem minmax(0, 1fr); }
+  .ev-agenda--talks .ev-agenda__who { grid-column: 2; margin-top: 0.6rem; }
+}
+
 /* ── partners: logo wall in sponsorship tiers ── */
 .ev-sponsors {
   background: #000; border: 1px solid var(--line); border-radius: 4px;
@@ -317,6 +333,8 @@ a.ev-speaker:hover .ev-speaker__in { color: var(--ev-accent); }
   .ev-agenda__row { grid-template-columns: auto minmax(0, 1fr); row-gap: 0.6rem; column-gap: 1rem; }
   .ev-agenda__body { grid-column: 1 / -1; }
   .ev-agenda__list { columns: 1; }
+  .ev-agenda--talks .ev-agenda__row { grid-template-columns: minmax(0, 1fr); }
+  .ev-agenda--talks .ev-agenda__who { grid-column: 1; margin-top: 0; }
   .ev-speakers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .ev-speaker { padding: 0.95rem 0.9rem 1rem; grid-template-columns: 1fr; row-gap: 0.7rem; align-items: start; }
   .ev-speaker__avatar { width: 48px; height: 48px; font-size: 0.9rem; }
