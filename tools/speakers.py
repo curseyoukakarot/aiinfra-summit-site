@@ -18,7 +18,6 @@ S = [
  ('john-brzozowski','John Brzozowski','Co-Founder','IPClear','jbrzozowski',None),
  ('andy-holland','Andy Holland','Sales Director - AI Infrastructure','DriveNets','andrewholland238',None),
  ('drew-pletcher','Drew Pletcher','Principal Architect','Lightning AI','drew-pletcher-a14907',None),
- ('dean-nelson','Dean Nelson','Founder & Chairman','iMasons','deannelson',None),
  ('david-goldman','David Goldman','Partner','Celesta Capital','david-goldman-a72895a5',None),
  ('david-hefter','David Hefter','AI Investment Strategist','BlackRock','david-hefter',None),
  ('shesh-s','Shesh S','Sr. Investment Director','SK Telecom Ventures','sheshu77',None),
@@ -36,6 +35,11 @@ S = [
  ('hira-dangol','Hira Dangol','Founder/CEO & Chief AI Officer','GenEye Labs','hiradangol',None),
  ('sandeep-subramaniam','Sandeep Subramaniam','Sr. Technical Product Manager, NTSG','AMD','sandeep-subramaniam-4022974',None),
  ('alan-butler','Alan Butler','CBO','SF Compute','ab530',None),
+ ('tamar-bercovici','Tamar Bercovici','VP of Engineering','Box','tamarbercovici',None),
+ ('phoebe-wang','Phoebe Wang','Chief AI Officer and Chief Investment Officer','Nuvini','phoebewang1',None),
+ ('bob-fabien-zinga','Bob Fabien Zinga','Information Commanding Officer','US Navy','bobfabienzinga',None),
+ ('sandy-carter','Sandy Carter','CEO','Equs','sandyacarter',None),
+ ('sarah-welton','Sarah Welton','Executive Director','iMasons',None,None),
 ]
 IN_ICON = ('<svg class="ev-speaker__in" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>')
 e = html.escape
