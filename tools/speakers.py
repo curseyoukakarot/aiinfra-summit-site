@@ -28,7 +28,6 @@ S = [
  ('sandhya-subramani','Sandhya Subramani','Sr. Developer Advocate, Generative AI','AWS','sandhyasubramani',None),
  ('liran-zvibel','Liran Zvibel','CEO & Co-Founder','WEKA','liranzvibel',None),
  ('ravi-singh','Ravi Singh','Director of Product Strategy and Management','AMD','rksingh',None),
- ('gautam-kumar','Gautam Kumar','Engineering','Elorian.ai','gautam-kumar-03140815',None),
  ('simran-arora','Simran Arora','SVP of Research','Together AI','simran-arora',None),
  ('poonacha-kongetira','Poonacha Kongetira','CEO','Classie','poonacha-kongetira-4286511',None),
  ('shishir-tewari','Shishir Tewari','Sr. Manager of Data Engineering','Procore Technologies','shishir-tewari-36113514',None),
