@@ -13,7 +13,7 @@ S = [
  ('murali-gandluru','Murali Gandluru','SVP, Data Center Networking','Cisco','muraligandluru',None),
  ('kiran-kamity','Kiran Kamity','VP Product, Data Center Networking','Cisco','kirankamity',None),
  ('aravind-srikumar','Aravind Srikumar','SVP of Product & Marketing','Upscale','aravind-srikumar-a6227019',None),
- ('lamia-youseff','Lamia Youseff','Founder','Jazz Computing','lyouseff','Keynote'),
+ ('jake-lundberg','Jake Lundberg','Field CTO','Coder','grove-mountain',None),
  ('rob-naidoff','Rob Naidoff','VP Sales & GTM, Americas','SambaNova','rob-naidoff-6aa43023',None),
  ('john-brzozowski','John Brzozowski','Co-Founder','IPClear','jbrzozowski',None),
  ('andy-holland','Andy Holland','Sales Director - AI Infrastructure','DriveNets','andrewholland238',None),
