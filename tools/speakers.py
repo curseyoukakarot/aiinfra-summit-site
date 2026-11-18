@@ -22,7 +22,7 @@ S = [
  ('shesh-s','Shesh S','Sr. Investment Director','SK Telecom Ventures','sheshu77',None),
  ('roger-chen','Roger Chen','Professor, Strategy & Innovation','USF','roger-rongxin-chen',None),
  ('vyoma-gajjar','Vyoma Gajjar','Sr Principal AI Architect','ServiceNow','vyomagajjar','Moderator'),
- ('akansha-aggarwal','Akansha Aggarwal','SVP, Commercial Growth & Transformation','Uber Freight','leadtochangeakansha',None),
+ ('akansha-aggarwal','Akansha Aggarwal','SVP, Commercial Growth & Transformation','Fmr. Uber Freight','leadtochangeakansha',None),
  ('wanyu-bian','Wanyu Bian','ML Engineer / Architect','Apple','wanyu-bian-phd',None),
  ('sandhya-subramani','Sandhya Subramani','Sr. Developer Advocate, Generative AI','AWS','sandhyasubramani',None),
  ('liran-zvibel','Liran Zvibel','CEO & Co-Founder','WEKA','liranzvibel',None),
