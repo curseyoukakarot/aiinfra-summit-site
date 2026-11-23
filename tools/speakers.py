@@ -14,7 +14,6 @@ S = [
  ('kiran-kamity','Kiran Kamity','VP Product, Data Center Networking','Cisco','kirankamity',None),
  ('aravind-srikumar','Aravind Srikumar','SVP of Product & Marketing','Upscale','aravind-srikumar-a6227019',None),
  ('jake-lundberg','Jake Lundberg','Field CTO','Coder','grove-mountain',None),
- ('rob-naidoff','Rob Naidoff','VP Sales & GTM, Americas','SambaNova','rob-naidoff-6aa43023',None),
  ('john-brzozowski','John Brzozowski','Co-Founder','IPClear','jbrzozowski',None),
  ('andy-holland','Andy Holland','Sales Director - AI Infrastructure','DriveNets','andrewholland238',None),
  ('drew-pletcher','Drew Pletcher','Principal Architect','Lightning AI','drew-pletcher-a14907',None),
@@ -46,6 +45,16 @@ S = [
  ('younes-amar','Younes Amar','Sr. Director Product & Engineering','d-Matrix','younes-amar-733a0350',None),
  ('angel-he','Angel He','Leading Capital Market & Strategic Finance','General Compute','angel-siyuan-he',None),
  ('quentin-anthony','Quentin Anthony','CTO','Zyphra','quentin-anthony',None),
+ ('animesh-singh','Animesh Singh','Sr. Director, AI Platform & Infrastructure','LinkedIn','animeshsingh1',None),
+ ('chris-mladenov','Chris Mladenov','Head of Platform Engineering','Fal','christianmladenov',None),
+ ('tanuj-mohan','Tanuj Mohan','Co-Founder & CBO','AI Fabrik','tanujmohan',None),
+ ('christian-koch','Christian Koch','Research','OpenAI','christianjkoch',None),
+ ('raja-koduri','Raja Koduri','CEO','OXMIQ','raja-koduri-3a51611',None),
+ ('don-barnetson','Don Barnetson','Sr. VP and Head of Product','Credo','donbarnetson',None),
+ ('dan-zheng','Dan Zheng','Founding Team & CBO','Clockwork.ai','danzheng',None),
+ ('vasanth-mohan','Vasanth Mohan','Sr. Director of Product Marketing & Developer Relations','SambaNova','v-mohan',None),
+ ('jasper-zhang','Jasper Zhang','CEO & Founder','Hyperbolic','yuezhang95',None),
+ ('papi-menon','Papi Menon','CPO','Outshift by Cisco','papimenon',None),
 ]
 IN_ICON = ('<svg class="ev-speaker__in" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>')
 e = html.escape
